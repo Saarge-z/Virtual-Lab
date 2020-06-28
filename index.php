@@ -238,11 +238,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 ?><script>alert("Incorrect referal code ask your teacher for correct code");</script><?php
                 }
             }
+          // Close statement
+        mysqli_stmt_close($stmt);
             }
         }
          
-        // Close statement
-        mysqli_stmt_close($stmt);
+        
     }
     
     // Close connection
